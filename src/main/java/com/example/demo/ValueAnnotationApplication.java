@@ -10,11 +10,9 @@ public class ValueAnnotationApplication {
 	public static void main(String[] args) {
 		ApplicationContext ioc = SpringApplication.run(ValueAnnotationApplication.class, args);
 		
-		Department dept = ioc.getBean(Department.class);
 		Employee emp = ioc.getBean(Employee.class);
-		
-		dept.displayDetails();
 		emp.displayDetails();
+		
 	}
 
 }
