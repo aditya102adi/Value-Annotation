@@ -17,7 +17,7 @@ public class Employee {
 
 	
 	@Autowired
-	public Employee(@Value("${employee.id}") int empId, @Value("${employee.name}") String empName, @Value("${employee.salary}") double empSalary) {
+	public Employee(@Value("${Employee.id}") int empId, @Value("${employee.name}") String empName, @Value("${employee.salary}") double empSalary) {
 		super();
 		this.empId = empId;
 		this.empName = empName;
